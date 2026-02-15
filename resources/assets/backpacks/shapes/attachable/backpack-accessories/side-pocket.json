@@ -1,0 +1,372 @@
+{
+	"editor": {
+		"backDropShape": "E:/Programs/VSModelCreator/backpack",
+		"collapsedPaths": "Root/Waist-Quiver/Belt,Root/Backpack/backpack_shoulder_strap_0,Root/Backpack_Accessory/backpack_pocket_0,Root/Backpack/backpack_body_0,Root/Backpack_Accessory/backpack_pocket_0/backpack_pocket_1/backpack_pocket_strap_13,Root/Waist-Quiver/Quiver/arrow_5,Root/Waist-Quiver/Quiver/arrow_4,Root/Waist-Quiver/Quiver/arrow_3,Root/Waist-Quiver/Quiver/arrow_2,Root/Waist-Quiver/Quiver/arrow_1,Root/Waist/buckle-bottom,Root/Waist-Quiver/Quiver/arrow_0,Root/Backpack/backpack_shoulder_strap_1,Root/Backpack/backpack_body_0/backpack_strap_2,Root/Backpack/backpack_body_0/backpack_strap_15",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"backpack-pocket-material-2": "game:block/leather/black",
+		"backpack-pocket-material-1": "game:block/leather/plain",
+		"backpack-pocket-metal": "game:block/metal/plate/brass"
+	},
+	"elements": [
+		{
+			"name": "Backpack_Accessory",
+			"stepParentName": "UpperTorso",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 5.0, 5.0, 6.2 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "backpack_pocket_0",
+					"from": [ 5.2, -0.5, 0.6 ],
+					"to": [ 6.2, 2.5, 2.6 ],
+					"rotationOrigin": [ 5.2, -0.5, 0.6 ],
+					"rotationY": 90.0,
+					"faces": {
+						"north": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 3.0 ] },
+						"east": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 3.0 ] },
+						"south": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 3.0 ] },
+						"west": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 3.0 ] },
+						"up": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
+						"down": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 2.0 ] }
+					},
+					"children": [
+						{
+							"name": "backpack_pocket_1",
+							"from": [ 0.0, 3.0, -0.1 ],
+							"to": [ 1.2, 3.2, 2.1 ],
+							"rotationOrigin": [ 0.0, 3.0, -0.1 ],
+							"rotationZ": -7.0,
+							"faces": {
+								"north": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"east": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"south": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"west": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"up": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
+								"down": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 2.0 ] }
+							},
+							"children": [
+								{
+									"name": "backpack_pocket_2",
+									"from": [ 1.0, 0.0, 0.0 ],
+									"to": [ 1.6, 0.2, 2.2 ],
+									"rotationOrigin": [ 1.0, 0.0, 0.0 ],
+									"rotationZ": -82.0,
+									"faces": {
+										"north": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
+										"down": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 0.5, 2.0 ] }
+									}
+								},
+								{
+									"name": "backpack_pocket_strap_2",
+									"from": [ 0.0, 0.2, 0.9 ],
+									"to": [ 1.3, 0.3, 1.4 ],
+									"rotationOrigin": [ 0.0, 0.2, 0.9 ],
+									"faces": {
+										"north": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+										"down": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] }
+									},
+									"children": [
+										{
+											"name": "backpack_pocket_strap_3",
+											"from": [ 1.2, 0.0, 0.0 ],
+											"to": [ 2.0, 0.1, 0.5 ],
+											"rotationOrigin": [ 1.2, 0.0, 0.0 ],
+											"rotationZ": -84.0,
+											"faces": {
+												"north": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"east": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"south": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"west": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"up": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"down": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+											},
+											"children": [
+												{
+													"name": "backpack_pocket_strap_4",
+													"from": [ 0.8, 0.0, 0.0 ],
+													"to": [ 1.6, 0.1, 0.5 ],
+													"rotationOrigin": [ 0.8, 0.1, 0.0 ],
+													"rotationZ": -19.0,
+													"faces": {
+														"north": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+														"east": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+														"south": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+														"west": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+														"up": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+														"down": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "backpack_pocket_strap_0",
+							"from": [ 0.0, -0.1, 0.8 ],
+							"to": [ 1.1, 0.0, 1.3 ],
+							"rotationOrigin": [ 0.0, -0.1, 0.8 ],
+							"faces": {
+								"north": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"east": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+								"south": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"west": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+								"up": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"down": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] }
+							},
+							"children": [
+								{
+									"name": "backpack_pocket_strap_1",
+									"from": [ 1.1, 0.1, 0.0 ],
+									"to": [ 2.8, 0.2, 0.5 ],
+									"rotationOrigin": [ 1.1, 0.1, 0.0 ],
+									"rotationZ": 90.0,
+									"faces": {
+										"north": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+										"down": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.5, 0.5 ] }
+									}
+								},
+								{
+									"name": "backpack_pocket_strap_5",
+									"from": [ 1.0, 1.6, -0.1 ],
+									"to": [ 1.15, 1.8, 0.6 ],
+									"rotationOrigin": [ 1.0, 1.8, -0.1 ],
+									"faces": {
+										"north": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"down": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+									}
+								},
+								{
+									"name": "backpack_pocket_strap_6",
+									"from": [ 1.0, 1.9, -0.1 ],
+									"to": [ 1.7, 2.0, 0.6 ],
+									"rotationOrigin": [ 1.0, 1.9, -0.1 ],
+									"rotationZ": 57.0,
+									"faces": {
+										"north": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"down": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+									}
+								},
+								{
+									"name": "backpack_pocket_strap_7",
+									"from": [ 1.0, 1.8, 0.2 ],
+									"to": [ 1.7, 1.9, 0.3 ],
+									"rotationOrigin": [ 1.0, 1.8, 0.2 ],
+									"rotationZ": 53.0,
+									"faces": {
+										"north": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"down": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "backpack_pocket_3",
+					"from": [ 7.2, -0.5, 5.6 ],
+					"to": [ 8.2, 2.5, 7.6 ],
+					"rotationOrigin": [ 7.2, -0.5, 5.6 ],
+					"rotationY": -90.0,
+					"faces": {
+						"north": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 3.0 ] },
+						"east": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 3.0 ] },
+						"south": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 3.0 ] },
+						"west": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 3.0 ] },
+						"up": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
+						"down": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 2.0 ] }
+					},
+					"children": [
+						{
+							"name": "backpack_pocket_4",
+							"from": [ 0.0, 3.0, -0.1 ],
+							"to": [ 1.2, 3.2, 2.1 ],
+							"rotationOrigin": [ 0.0, 3.0, -0.1 ],
+							"rotationZ": -7.0,
+							"faces": {
+								"north": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"east": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"south": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"west": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"up": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
+								"down": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 1.0, 2.0 ] }
+							},
+							"children": [
+								{
+									"name": "backpack_pocket_5",
+									"from": [ 1.0, 0.0, 0.0 ],
+									"to": [ 1.6, 0.2, 2.2 ],
+									"rotationOrigin": [ 1.0, 0.0, 0.0 ],
+									"rotationZ": -82.0,
+									"faces": {
+										"north": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
+										"down": { "texture": "#backpack-pocket-material-1", "uv": [ 0.0, 0.0, 0.5, 2.0 ] }
+									}
+								},
+								{
+									"name": "backpack_pocket_strap_8",
+									"from": [ 0.0, 0.2, 0.8 ],
+									"to": [ 1.3, 0.3, 1.3 ],
+									"rotationOrigin": [ 0.0, 0.2, 0.8 ],
+									"faces": {
+										"north": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+										"down": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] }
+									},
+									"children": [
+										{
+											"name": "backpack_pocket_strap_9",
+											"from": [ 1.2, 0.0, 0.0 ],
+											"to": [ 2.0, 0.1, 0.5 ],
+											"rotationOrigin": [ 1.2, 0.0, 0.0 ],
+											"rotationZ": -84.0,
+											"faces": {
+												"north": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"east": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"south": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"west": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"up": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"down": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+											},
+											"children": [
+												{
+													"name": "backpack_pocket_strap_10",
+													"from": [ 0.8, 0.0, 0.0 ],
+													"to": [ 1.6, 0.1, 0.5 ],
+													"rotationOrigin": [ 0.8, 0.1, 0.0 ],
+													"rotationZ": -19.0,
+													"faces": {
+														"north": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+														"east": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+														"south": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+														"west": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+														"up": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+														"down": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "backpack_pocket_strap_11",
+							"from": [ 0.0, -0.1, 0.7 ],
+							"to": [ 1.1, 0.0, 1.2 ],
+							"rotationOrigin": [ 0.0, -0.1, 0.7 ],
+							"faces": {
+								"north": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"east": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+								"south": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"west": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+								"up": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"down": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.0, 0.5 ] }
+							},
+							"children": [
+								{
+									"name": "backpack_pocket_strap_12",
+									"from": [ 1.1, 0.1, 0.0 ],
+									"to": [ 2.8, 0.2, 0.5 ],
+									"rotationOrigin": [ 1.1, 0.1, 0.0 ],
+									"rotationZ": 90.0,
+									"faces": {
+										"north": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+										"down": { "texture": "#backpack-pocket-material-2", "uv": [ 0.0, 0.0, 1.5, 0.5 ] }
+									}
+								},
+								{
+									"name": "backpack_pocket_strap_13",
+									"from": [ 1.0, 1.6, -0.1 ],
+									"to": [ 1.15, 1.8, 0.6 ],
+									"rotationOrigin": [ 1.0, 1.8, -0.1 ],
+									"faces": {
+										"north": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"down": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+									}
+								},
+								{
+									"name": "backpack_pocket_strap_14",
+									"from": [ 1.0, 1.9, -0.1 ],
+									"to": [ 1.7, 2.0, 0.6 ],
+									"rotationOrigin": [ 1.0, 1.9, -0.1 ],
+									"rotationZ": 57.0,
+									"faces": {
+										"north": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"down": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+									}
+								},
+								{
+									"name": "backpack_pocket_strap_15",
+									"from": [ 1.0, 1.8, 0.2 ],
+									"to": [ 1.7, 1.9, 0.3 ],
+									"rotationOrigin": [ 1.0, 1.8, 0.2 ],
+									"rotationZ": 53.0,
+									"faces": {
+										"north": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"down": { "texture": "#backpack-pocket-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]}

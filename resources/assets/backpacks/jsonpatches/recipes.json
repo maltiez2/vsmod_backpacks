@@ -1,0 +1,47 @@
+[
+  {
+    "op": "addmerge",
+    "side": "server",
+    "file": "game:recipes/grid/backpack",
+    "path": "-",
+    "value": {
+      "enabled": false
+    }
+  },
+  {
+    "op": "addmerge",
+    "side": "server",
+    "file": "game:recipes/grid/basket",
+    "path": "-",
+    "value": {
+      "enabled": false
+    }
+  },
+  {
+    "op": "addmerge",
+    "side": "server",
+    "file": "game:recipes/grid/hunterbackpack",
+    "path": "-",
+    "value": {
+      "enabled": false
+    }
+  },
+  {
+    "op": "addmerge",
+    "side": "server",
+    "file": "game:recipes/grid/linensack",
+    "path": "-",
+    "value": {
+      "enabled": false
+    }
+  },
+  {
+    "op": "addmerge",
+    "side": "server",
+    "file": "game:recipes/grid/miningbag",
+    "path": "-",
+    "value": {
+      "enabled": false
+    }
+  }
+]

@@ -1,0 +1,41 @@
+﻿{
+  "code": "backbag",
+  "class": "Item",
+  "tags": ["stickframe-accessory"],
+  "variantgroups": [{ "code": "category", "states": ["smalllinensack"] }, { "code": "subtype", "states": ["stickframe"] }, { "code": "type", "states": ["general"] }],
+  "shape": { "base": "attachable/stickframe-accessories/smalllinensack" },
+  "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
+  "storageFlags": 128,
+  "behaviors": [
+    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 8 }] } },
+    {
+      "name": "Backpacks:ShapeTexturesFromAttributes",
+      "properties": {
+        "textures": {
+          "rope-*::wood-*": { "backframe-strap": { "base": "game:block/cloth/{rope}" }, "backframe-material": { "base": "game:block/wood/debarked/{wood}" } },
+          "*": { "backframe-strap": { "base": "game:block/cloth/reedrope" }, "backframe-material": { "base": "game:block/wood/debarked/oak" } }
+        }
+      }
+    },
+    {
+      "name": "Backpacks:ShapeReplacement",
+      "properties": {
+        "addOverlayPrefix": false,
+        "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
+        "shape": { "*": { "base": "backpacks:gui/stickframe-smalllinensack" } },
+        "textures": {
+          "rope-*::wood-*": { "backframe-strap": { "base": "game:block/cloth/{rope}" }, "backframe-material": { "base": "game:block/wood/debarked/{wood}" } },
+          "*": { "backframe-strap": { "base": "game:block/cloth/reedrope" }, "backframe-material": { "base": "game:block/wood/debarked/oak" } }
+        }
+      }
+    },
+    { "name": "CombatOverhaul:GoesIntoSlotsInfo" }
+  ],
+  "attributes": { "wearableAttachment": true, "clothescategories": ["addBackpack2"], "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
+  "creativeinventory": { "general": ["*"], "backpacks": ["*"] },
+  "creativeinventoryStacks": [{ "tabs": ["general", "backpacks-colors"], "stacks": [{ "type": "item", "code": "backbag-{category}-{subtype}-{type}" }] }],
+  "renderAlphaTest": "0.25",
+  "tpHandTransform": { "translation": { "x": 0, "y": "-0.05", "z": 0 }, "rotation": { "x": 0, "y": 180, "z": 48 }, "origin": { "x": 0, "y": 0, "z": 0 }, "scale": 1 },
+  "guiTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": -16, "y": 15, "z": -180 }, "origin": { "x": "-0.01", "y": "0.09", "z": 0 }, "scaleXyz": { "x": "-4.82", "y": "4.82", "z": "4.82" } },
+  "groundTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 90, "y": 0, "z": 0 }, "origin": { "x": 0, "y": 0, "z": "0.1" }, "scale": 4 }
+}

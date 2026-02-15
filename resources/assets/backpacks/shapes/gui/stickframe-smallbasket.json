@@ -1,0 +1,68 @@
+{
+	"editor": {
+		"collapsedPaths": "Root/Backframe/shoulder_strap_3,Root/Backframe/shoulder_strap_0,Root/Waist-Quiver/Belt,Root/Backframe/wood_frame/backframe_5,Root/Backframe/shoulder_strap_6,Root/Backpack/backpack_shoulder_strap_0,Root/Backpack/backpack_body_0,Root/Basket/strap_0,Root/Waist-Quiver/Quiver/arrow_5,Root/Basket/basket_0,Root/Waist-Quiver/Quiver/arrow_4,Root/Waist-Quiver/Quiver/arrow_3,Root/Waist-Quiver/Quiver/arrow_2,Root/Waist-Quiver/Quiver/arrow_1,Root/Waist/buckle-bottom,Root/Waist-Quiver/Quiver/arrow_0,Root/Backpack/backpack_shoulder_strap_1,Root/Backframe/shoulder_strap_9,Root/Backpack/backpack_body_0/backpack_strap_2,Root/Backpack/backpack_body_0/backpack_strap_15",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"backframe-front-material": "game:block/reed/basket/normal-westeast"
+	},
+	"elements": [
+		{
+			"name": "Basket",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 5.0, 5.0, 6.2 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "basket_0",
+					"from": [ -2.1, 0.0, -2.4 ],
+					"to": [ 2.9, 3.0, 2.6 ],
+					"rotationOrigin": [ -2.1, 0.0, -2.4 ],
+					"faces": {
+						"north": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 5.0, 3.0 ] },
+						"east": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 5.0, 3.0 ] },
+						"south": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 5.0, 3.0 ] },
+						"west": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 5.0, 3.0 ] },
+						"up": { "texture": "#backframe-front-material", "uv": [ 5.5, 5.5, 10.5, 10.5 ] },
+						"down": { "texture": "#backframe-front-material", "uv": [ 5.0, 5.5, 10.0, 10.5 ] }
+					},
+					"children": [
+						{
+							"name": "basket_1",
+							"from": [ 0.2, 3.0, 0.2 ],
+							"to": [ 4.8, 3.5, 4.8 ],
+							"rotationOrigin": [ 0.2, 3.0, 0.2 ],
+							"faces": {
+								"north": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 4.5, 0.5 ] },
+								"east": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 4.5, 0.5 ] },
+								"south": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 4.5, 0.5 ] },
+								"west": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 4.5, 0.5 ] },
+								"up": { "texture": "#backframe-front-material", "uv": [ 5.5, 5.5, 10.0, 10.0 ] },
+								"down": { "texture": "#backframe-front-material", "uv": [ 5.0, 5.5, 9.5, 10.0 ] }
+							}
+						},
+						{
+							"name": "basket_2",
+							"from": [ 2.0, 3.5, 2.0 ],
+							"to": [ 3.0, 3.9, 3.0 ],
+							"rotationOrigin": [ 2.0, 3.5, 2.0 ],
+							"faces": {
+								"north": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"east": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"south": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"west": { "texture": "#backframe-front-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"up": { "texture": "#backframe-front-material", "uv": [ 1.5, 11.5, 2.5, 12.5 ] },
+								"down": { "texture": "#backframe-front-material", "uv": [ 1.5, 11.5, 2.5, 12.5 ] }
+							}
+						}
+					]
+				}
+			]
+		}
+	]}

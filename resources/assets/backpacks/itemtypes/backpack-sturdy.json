@@ -1,0 +1,59 @@
+﻿{
+  "code": "backbag",
+  "class": "Item",
+  "tags": ["backpack"],
+  "variantgroups": [{ "code": "category", "states": ["back"] }, { "code": "subtype", "states": ["plain"] }, { "code": "type", "states": ["sturdybackpack"] }],
+  "shape": { "base": "attachable/backpack" },
+  "textures": { "seraph": { "base": "game:block/transparent" }, "backpack-material-1": { "base": "game:block/leather/chromium" } },
+  "storageFlags": 128,
+  "behaviors": [
+    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 14 }] } },
+    {
+      "name": "Backpacks:ShapeTexturesFromAttributes",
+      "properties": {
+        "textures": {
+          "metal-*::leather-*::straps-leather-*": {
+            "backpack-material-1": { "base": "game:block/leather/{leather}" },
+            "backpack-material-2": { "base": "game:block/leather/{straps-leather}" },
+            "backpack-metal": { "base": "game:block/metal/plate/{metal}" }
+          }
+        }
+      }
+    },
+    {
+      "name": "CombatOverhaul:AdditionalSlots",
+      "properties": {
+        "enabledSlots": ["addBackpack1", "addBackpack2", "addBackpack3", "addBackpack4"],
+        "configs": {
+          "addBackpack1": { "canHoldItemTags": ["backpack-accessory"] },
+          "addBackpack2": { "canHoldItemTags": ["backpack-accessory"] },
+          "addBackpack3": { "canHoldItemTags": ["backpack-accessory"] },
+          "addBackpack4": { "canHoldItemTags": ["backpack-accessory"] }
+        }
+      }
+    },
+    {
+      "name": "Backpacks:ShapeReplacement",
+      "properties": {
+        "addOverlayPrefix": false,
+        "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
+        "shape": { "*": { "base": "backpacks:gui/backpack" } },
+        "textures": {
+          "metal-*::leather-*::straps-leather-*": {
+            "backpack-material-1": { "base": "game:block/leather/{leather}" },
+            "backpack-material-2": { "base": "game:block/leather/{straps-leather}" },
+            "backpack-metal": { "base": "game:block/metal/plate/{metal}" }
+          }
+        }
+      }
+    },
+    { "name": "CombatOverhaul:GoesIntoSlotsInfo" }
+  ],
+  "attributes": { "wearableAttachment": true, "clothescategory": "backgear", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
+  "creativeinventory": { "general": ["*"], "backpacks": ["*"] },
+  "creativeinventoryStacks": [{ "tabs": ["general", "backpacks-colors"], "stacks": [{ "type": "item", "code": "backbag-{category}-{subtype}-{type}" }] }],
+  "renderAlphaTest": "0.25",
+  "tpHandTransform": { "translation": { "x": 0, "y": "-0.05", "z": 0 }, "rotation": { "x": 0, "y": 180, "z": 48 }, "origin": { "x": 0, "y": 0, "z": 0 }, "scale": 1 },
+  "guiTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 161, "y": -134, "z": 0 }, "origin": { "x": "-0.02", "y": "0.2", "z": 0 }, "scaleXyz": { "x": "-2.98", "y": "2.98", "z": "2.98" } },
+  "groundTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 90, "y": 0, "z": 0 }, "origin": { "x": 0, "y": 0, "z": "0.1" }, "scale": 4 }
+}

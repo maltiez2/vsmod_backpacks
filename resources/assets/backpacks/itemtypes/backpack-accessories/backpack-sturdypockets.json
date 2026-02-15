@@ -1,0 +1,59 @@
+﻿{
+  "code": "backbag",
+  "class": "Item",
+  "tags": ["backpack-accessory"],
+  "variantgroups": [{ "code": "category", "states": ["sturdypocket"] }, { "code": "subtype", "states": ["backpack"] }, { "code": "type", "states": ["general"] }],
+  "shape": { "base": "attachable/backpack-accessories/front-pocket" },
+  "textures": { "seraph": { "base": "game:block/transparent" }, "backpack-pocket-material-1": { "base": "game:block/leather/chromium" } },
+  "storageFlags": 128,
+  "behaviors": [
+    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 6 }] } },
+    {
+      "name": "Backpacks:ShapeTexturesFromAttributes",
+      "properties": {
+        "shape": { "side-*": { "base": "backpacks:attachable/backpack-accessories/{side}-pocket" }, "*": { "base": "backpacks:attachable/backpack-accessories/front-pocket" } },
+        "textures": {
+          "metal-*::leather-*::straps-leather-*": {
+            "backpack-pocket-material-1": { "base": "game:block/leather/{leather}" },
+            "backpack-pocket-material-2": { "base": "game:block/leather/{straps-leather}" },
+            "backpack-pocket-metal": { "base": "game:block/metal/plate/{metal}" }
+          },
+          "*": {
+            "backpack-pocket-material-1": { "base": "game:block/leather/chromium" },
+            "backpack-pocket-material-2": { "base": "game:block/leather/black" },
+            "backpack-pocket-metal": { "base": "game:block/metal/plate/brass" }
+          }
+        }
+      }
+    },
+    { "name": "Backpacks:VariantFromSlot", "properties": { "targetVariant": "side", "slotsToVariants": { "addBackpack1": "front", "addBackpack2": "side", "addBackpack3": "bottom" } } },
+    {
+      "name": "Backpacks:ShapeReplacement",
+      "properties": {
+        "addOverlayPrefix": false,
+        "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
+        "shape": { "*": { "base": "backpacks:gui/backpack-pocket" } },
+        "textures": {
+          "metal-*::leather-*::straps-leather-*": {
+            "backpack-pocket-material-1": { "base": "game:block/leather/{leather}" },
+            "backpack-pocket-material-2": { "base": "game:block/leather/{straps-leather}" },
+            "backpack-pocket-metal": { "base": "game:block/metal/plate/{metal}" }
+          },
+          "*": {
+            "backpack-pocket-material-1": { "base": "game:block/leather/chromium" },
+            "backpack-pocket-material-2": { "base": "game:block/leather/black" },
+            "backpack-pocket-metal": { "base": "game:block/metal/plate/brass" }
+          }
+        }
+      }
+    },
+    { "name": "CombatOverhaul:GoesIntoSlotsInfo" }
+  ],
+  "attributes": { "wearableAttachment": true, "clothescategories": ["addBackpack1", "addBackpack2", "addBackpack3"], "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
+  "creativeinventory": { "general": ["*"], "backpacks": ["*"] },
+  "creativeinventoryStacks": [{ "tabs": ["general", "backpacks-colors"], "stacks": [{ "type": "item", "code": "backbag-{category}-{subtype}-{type}" }] }],
+  "renderAlphaTest": "0.25",
+  "tpHandTransform": { "translation": { "x": 0, "y": "-0.05", "z": 0 }, "rotation": { "x": 0, "y": 180, "z": 48 }, "origin": { "x": 0, "y": 0, "z": 0 }, "scale": 1 },
+  "guiTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 34, "y": -16, "z": -158 }, "origin": { "x": "-0.02", "y": "0.09", "z": 0 }, "scaleXyz": { "x": "-4.77", "y": "4.77", "z": "4.77" } },
+  "groundTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 90, "y": 0, "z": 0 }, "origin": { "x": 0, "y": 0, "z": "0.1" }, "scale": 4 }
+}

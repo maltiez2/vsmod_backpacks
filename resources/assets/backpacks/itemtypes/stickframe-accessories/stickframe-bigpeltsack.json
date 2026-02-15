@@ -1,0 +1,41 @@
+﻿{
+  "code": "backbag",
+  "class": "Item",
+  "tags": ["stickframe-accessory"],
+  "variantgroups": [{ "code": "category", "states": ["bigpeltsack"] }, { "code": "subtype", "states": ["stickframe"] }, { "code": "type", "states": ["general"] }],
+  "shape": { "base": "attachable/stickframe-accessories/bigpeltsack" },
+  "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
+  "storageFlags": 128,
+  "behaviors": [
+    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 10 }] } },
+    {
+      "name": "Backpacks:ShapeTexturesFromAttributes",
+      "properties": {
+        "textures": {
+          "rope-*::material-*": { "backframe-strap": { "base": "game:block/cloth/{rope}" }, "backframe-material": { "base": "game:item/bag/hunterbackpack" } },
+          "*": { "backframe-strap": { "base": "game:block/cloth/reedrope" }, "backframe-material": { "base": "game:item/bag/hunterbackpack" } }
+        }
+      }
+    },
+    {
+      "name": "Backpacks:ShapeReplacement",
+      "properties": {
+        "addOverlayPrefix": false,
+        "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
+        "shape": { "*": { "base": "backpacks:gui/stickframe-bigpeltsack" } },
+        "textures": {
+          "rope-*::material-*": { "backframe-strap": { "base": "game:block/cloth/{rope}" }, "backframe-material": { "base": "game:item/bag/hunterbackpack" } },
+          "*": { "backframe-strap": { "base": "game:block/cloth/reedrope" }, "backframe-material": { "base": "game:item/bag/hunterbackpack" } }
+        }
+      }
+    },
+    { "name": "CombatOverhaul:GoesIntoSlotsInfo" }
+  ],
+  "attributes": { "wearableAttachment": true, "clothescategories": ["addBackpack1"], "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
+  "creativeinventory": { "general": ["*"], "backpacks": ["*"] },
+  "creativeinventoryStacks": [{ "tabs": ["general", "backpacks-colors"], "stacks": [{ "type": "item", "code": "backbag-{category}-{subtype}-{type}" }] }],
+  "renderAlphaTest": "0.25",
+  "tpHandTransform": { "translation": { "x": 0, "y": "-0.05", "z": 0 }, "rotation": { "x": 0, "y": 180, "z": 48 }, "origin": { "x": 0, "y": 0, "z": 0 }, "scale": 1 },
+  "guiTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": -25, "y": -25, "z": -180 }, "origin": { "x": "-0.05", "y": "0.15", "z": 0 }, "scaleXyz": { "x": "-3.41", "y": "3.41", "z": "3.41" } },
+  "groundTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 90, "y": 0, "z": 0 }, "origin": { "x": 0, "y": 0, "z": "0.1" }, "scale": 4 }
+}

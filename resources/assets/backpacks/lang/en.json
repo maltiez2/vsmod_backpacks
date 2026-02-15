@@ -1,0 +1,17 @@
+{
+  "game:tabname-backpacks": "Backpacks",
+  "game:tabname-backpacks-colors": "Backpacks (Colored)",
+
+  "item-backbag-back-plain-backpack": "Backpack",
+  "item-backbag-back-plain-sturdybackpack": "Sturdy backpack",
+  "item-backbag-back-plain-stickframe": "Stick frame",
+  "item-backbag-pocket-backpack-general": "Backpack pocket",
+  "item-backbag-sturdypocket-backpack-general": "Sturdy backpack pocket",
+  "item-backbag-bigbasket-stickframe-general": "Big reed back basket",
+  "item-backbag-smallbasket-stickframe-general": "Small reed back basket",
+  "item-backbag-biglinensack-stickframe-general": "Big linen back sack",
+  "item-backbag-smalllinensack-stickframe-general": "Small linen back sack",
+  "item-backbag-bigpeltsack-stickframe-general": "Big pelt back sack",
+  "item-backbag-smallpeltsack-stickframe-general": "Small pelt back sack",
+  "item-part-furniture-*": "Backpack furniture"
+}

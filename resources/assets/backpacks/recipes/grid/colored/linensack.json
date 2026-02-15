@@ -1,0 +1,28 @@
+[
+  {
+		"enabled": true,
+		"ingredientPattern": "CRC,C_C,CCC",
+		"recipeGroup": 1,
+		"ingredients": {
+			"R": { "type": "item", "code": "game:rope", "quantity":  1 },
+			"C": { "type": "item", "code": "game:flaxtwine", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-biglinensack-stickframe-general" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "CRC,_C_",
+		"recipeGroup": 1,
+		"ingredients": {
+			"R": { "type": "item", "code": "game:rope", "quantity":  1 },
+			"C": { "type": "item", "code": "game:flaxtwine", "quantity":  3 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-smalllinensack-stickframe-general" }
+	}
+]

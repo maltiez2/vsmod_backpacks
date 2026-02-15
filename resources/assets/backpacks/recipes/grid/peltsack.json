@@ -1,0 +1,106 @@
+[
+  {
+		"enabled": true,
+		"ingredientPattern": "CRC,CRC,CCC",
+		"recipeGroup": 1,
+		"ingredients": {
+			"R": { "type": "item", "code": "game:hide-pelt-small", "quantity":  3 },
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "CRC,_C_",
+		"recipeGroup": 1,
+		"ingredients": {
+			"R": { "type": "item", "code": "game:hide-pelt-small", "quantity":  3 },
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "CRC,CRC,CCC",
+		"recipeGroup": 1,
+		"ingredients": {
+			"R": { "type": "item", "code": "game:hide-pelt-medium", "quantity":  1 },
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "CRC,_C_",
+		"recipeGroup": 1,
+		"ingredients": {
+			"R": { "type": "item", "code": "game:hide-pelt-medium", "quantity":  1 },
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "CRC,CRC,CCC",
+		"recipeGroup": 1,
+		"ingredients": {
+			"R": { "type": "item", "code": "game:hide-pelt-large", "quantity":  1 },
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "CRC,_C_",
+		"recipeGroup": 1,
+		"ingredients": {
+			"R": { "type": "item", "code": "game:hide-pelt-large", "quantity":  1 },
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "CRC,CRC,CCC",
+		"recipeGroup": 1,
+		"ingredients": {
+			"R": { "type": "item", "code": "game:hide-pelt-huge", "quantity":  1 },
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "CRC,_C_",
+		"recipeGroup": 1,
+		"ingredients": {
+			"R": { "type": "item", "code": "game:hide-pelt-huge", "quantity":  1 },
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
+	}
+]

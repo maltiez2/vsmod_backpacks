@@ -1,0 +1,44 @@
+[
+  {
+    "op": "replace",
+    "side": "server",
+    "file": "game:itemtypes/wearable/bag/backpack",
+    "path": "creativeinventory",
+    "value": {}
+  },
+  {
+    "op": "replace",
+    "side": "server",
+    "file": "game:itemtypes/wearable/bag/handbasket",
+    "path": "creativeinventory",
+    "value": {}
+  },
+  {
+    "op": "replace",
+    "side": "server",
+    "file": "game:itemtypes/wearable/bag/hunterbackpack",
+    "path": "creativeinventory",
+    "value": {}
+  },
+  {
+    "op": "replace",
+    "side": "server",
+    "file": "game:itemtypes/wearable/bag/linensack",
+    "path": "creativeinventory",
+    "value": {}
+  },
+  {
+    "op": "replace",
+    "side": "server",
+    "file": "game:itemtypes/wearable/bag/miningbag",
+    "path": "creativeinventory",
+    "value": {}
+  },
+  {
+    "op": "replace",
+    "side": "server",
+    "file": "game:itemtypes/wearable/bag/miningbagsturdy",
+    "path": "creativeinventory",
+    "value": {}
+  }
+]

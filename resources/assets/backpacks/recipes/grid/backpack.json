@@ -1,0 +1,58 @@
+[
+  {
+		"enabled": true,
+		"ingredientPattern": "SNS,LLL,LLL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-furniture-*", "quantity":  2},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  2 },
+			"S": { "type": "item", "code": "game:leather-normal-plain", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-back-plain-backpack" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "SNS,LLL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-furniture-*", "quantity":  1},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  1 },
+			"S": { "type": "item", "code": "game:leather-normal-plain", "quantity":  1 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-pocket-backpack-general" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "SNS,LLL,LLL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-furniture-*", "quantity":  2},
+			"L": { "type": "item", "code": "game:leather-sturdy-plain", "quantity":  2 },
+			"S": { "type": "item", "code": "game:leather-normal-plain", "quantity":  2 }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-back-plain-sturdybackpack" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "SNS,LLL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-furniture-*", "quantity":  1},
+			"L": { "type": "item", "code": "game:leather-sturdy-plain", "quantity":  1 },
+			"S": { "type": "item", "code": "game:leather-normal-plain", "quantity":  1 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "backpacks:backbag-sturdypocket-backpack-general" }
+	}
+]
