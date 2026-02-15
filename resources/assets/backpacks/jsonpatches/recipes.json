@@ -27,13 +27,11 @@
     }
   },
   {
-    "op": "addmerge",
+    "op": "add",
     "side": "server",
     "file": "game:recipes/grid/linensack",
-    "path": "-",
-    "value": {
-      "enabled": false
-    }
+    "path": "enabled",
+    "value": false
   },
   {
     "op": "addmerge",

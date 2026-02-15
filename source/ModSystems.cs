@@ -11,5 +11,6 @@ public sealed class BackpacksSystem : ModSystem
         api.RegisterCollectibleBehaviorClass("Backpacks:Sheath", typeof(SheathBehavior));
         api.RegisterCollectibleBehaviorClass("Backpacks:Quiver", typeof(QuiverBehavior));
         api.RegisterCollectibleBehaviorClass("Backpacks:VariantFromSlot", typeof(VariantFromSlotBehavior));
+        api.RegisterCollectibleBehaviorClass("Backpacks:GenerateCreativeStacks", typeof(GenerateCreativeStacks));
     }
 }

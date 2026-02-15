@@ -4,12 +4,12 @@
 		"ingredientPattern": "SRS,SSS,SRS",
 		"recipeGroup": 1,
 		"ingredients": {
-			"R": { "type": "item", "code": "game:rope", "quantity":  2 },
+			"R": { "type": "item", "code": "game:flaxtwine", "quantity":  2 },
 			"S": { "type": "item", "code": "game:stick", "quantity":  2 }
 		},
 		"width": 3,
 		"height": 3,
 		"name": "",
-		"output": { "type": "item", "code": "backpacks:backbag-back-plain-stickframe" }
+		"output": { "type": "item", "code": "backpacks:backbag-back-plain-stickframe", "attributes": {"types": {"rope": "flaxtwine"} } }
 	}
 ]

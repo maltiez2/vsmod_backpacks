@@ -1,106 +1,114 @@
 [
   {
 		"enabled": true,
-		"ingredientPattern": "CRC,CRC,CCC",
+		"ingredientPattern": "CRC,CRC,CFC",
 		"recipeGroup": 1,
 		"ingredients": {
 			"R": { "type": "item", "code": "game:hide-pelt-small", "quantity":  3 },
-			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 },
+			"F": { "type": "item", "code": "game:flaxtwine", "quantity":  1 }
 		},
 		"width": 3,
 		"height": 3,
 		"name": "",
-		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
+		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general", "attributes": {"types": {"rope": "flaxtwine"} }}
 	},
 	{
 		"enabled": true,
-		"ingredientPattern": "CRC,_C_",
+		"ingredientPattern": "CRC,_F_",
 		"recipeGroup": 1,
 		"ingredients": {
 			"R": { "type": "item", "code": "game:hide-pelt-small", "quantity":  3 },
-			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 },
+			"F": { "type": "item", "code": "game:flaxtwine", "quantity":  1 }
 		},
 		"width": 3,
 		"height": 2,
 		"name": "",
-		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
+		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general", "attributes": {"types": {"rope": "flaxtwine"} }}
 	},
 	{
 		"enabled": true,
-		"ingredientPattern": "CRC,CRC,CCC",
+		"ingredientPattern": "CRC,CRC,CFC",
 		"recipeGroup": 1,
 		"ingredients": {
 			"R": { "type": "item", "code": "game:hide-pelt-medium", "quantity":  1 },
-			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 },
+			"F": { "type": "item", "code": "game:flaxtwine", "quantity":  1 }
 		},
 		"width": 3,
 		"height": 3,
 		"name": "",
-		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
+		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general", "attributes": {"types": {"rope": "flaxtwine"} }}
 	},
 	{
 		"enabled": true,
-		"ingredientPattern": "CRC,_C_",
+		"ingredientPattern": "CRC,_F_",
 		"recipeGroup": 1,
 		"ingredients": {
 			"R": { "type": "item", "code": "game:hide-pelt-medium", "quantity":  1 },
-			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 },
+			"F": { "type": "item", "code": "game:flaxtwine", "quantity":  1 }
 		},
 		"width": 3,
 		"height": 2,
 		"name": "",
-		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
+		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general", "attributes": {"types": {"rope": "flaxtwine"} }}
 	},
 	{
 		"enabled": true,
-		"ingredientPattern": "CRC,CRC,CCC",
+		"ingredientPattern": "CRC,CRC,CFC",
 		"recipeGroup": 1,
 		"ingredients": {
 			"R": { "type": "item", "code": "game:hide-pelt-large", "quantity":  1 },
-			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 },
+			"F": { "type": "item", "code": "game:flaxtwine", "quantity":  1 }
 		},
 		"width": 3,
 		"height": 3,
 		"name": "",
-		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
+		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general", "attributes": {"types": {"rope": "flaxtwine"} }}
 	},
 	{
 		"enabled": true,
-		"ingredientPattern": "CRC,_C_",
+		"ingredientPattern": "CRC,_F_",
 		"recipeGroup": 1,
 		"ingredients": {
 			"R": { "type": "item", "code": "game:hide-pelt-large", "quantity":  1 },
-			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 },
+			"F": { "type": "item", "code": "game:flaxtwine", "quantity":  1 }
 		},
 		"width": 3,
 		"height": 2,
 		"name": "",
-		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
+		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general", "attributes": {"types": {"rope": "flaxtwine"} }}
 	},
 	{
 		"enabled": true,
-		"ingredientPattern": "CRC,CRC,CCC",
+		"ingredientPattern": "CRC,CRC,CFC",
 		"recipeGroup": 1,
 		"ingredients": {
 			"R": { "type": "item", "code": "game:hide-pelt-huge", "quantity":  1 },
-			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 },
+			"F": { "type": "item", "code": "game:flaxtwine", "quantity":  1 }
 		},
 		"width": 3,
 		"height": 3,
 		"name": "",
-		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
+		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general", "attributes": {"types": {"rope": "flaxtwine"} }}
 	},
 	{
 		"enabled": true,
-		"ingredientPattern": "CRC,_C_",
+		"ingredientPattern": "CRC,_F_",
 		"recipeGroup": 1,
 		"ingredients": {
 			"R": { "type": "item", "code": "game:hide-pelt-huge", "quantity":  1 },
-			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 }
+			"C": { "type": "item", "code": "game:cattailtops", "quantity":  2 },
+			"F": { "type": "item", "code": "game:flaxtwine", "quantity":  1 }
 		},
 		"width": 3,
 		"height": 2,
 		"name": "",
-		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
+		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general", "attributes": {"types": {"rope": "flaxtwine"} }}
 	}
 ]

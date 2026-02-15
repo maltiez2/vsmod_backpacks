@@ -7,7 +7,7 @@
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
   "behaviors": [
-    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 12, "canHoldWildcards": ["*"] }] } },
+    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 18, "canHoldWildcards": ["*"] }] } },
     {
       "name": "Backpacks:ShapeTexturesFromAttributes",
       "properties": {
@@ -47,7 +47,20 @@
         }
       }
     },
-    { "name": "CombatOverhaul:GoesIntoSlotsInfo" }
+    { "name": "CombatOverhaul:GoesIntoSlotsInfo" },
+    {
+      "name": "Backpacks:GenerateCreativeStacks",
+      "properties": {
+        "enabled": true,
+        "attributes": {
+          "metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"],
+          "leather": ["plain", "orange", "black", "red", "blue", "purple", "pink", "white", "yellow", "gray", "green"],
+          "straps-leather": ["plain", "orange", "black", "red", "blue", "purple", "pink", "white", "yellow", "gray", "green"]
+        },
+        "creativeTabs": ["backpacks-colors"],
+        "format": "{{ \"types\": {{ {0} }} }}"
+      }
+    }
   ],
   "attributes": { "wearableAttachment": true, "clothescategory": "backgear", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
   "creativeinventory": { "general": ["*"], "backpacks": ["*"] },

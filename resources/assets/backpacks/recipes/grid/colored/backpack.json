@@ -2,7 +2,7 @@
   {
 		"enabled": true,
 		"ingredientPattern": "SNS,LLL,LLL",
-		"recipeGroup": 1,
+		"recipeGroup": 2,
 		"ingredients": {
 			"N": {"type": "item", "code": "part-furniture-{metal}", "quantity":  2},
 			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  2 },
@@ -19,7 +19,7 @@
 	{
 		"enabled": true,
 		"ingredientPattern": "SNS,LLL",
-		"recipeGroup": 1,
+		"recipeGroup": 2,
 		"ingredients": {
 			"N": {"type": "item", "code": "part-furniture-{metal}", "quantity":  1},
 			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  1 },
@@ -36,7 +36,7 @@
 	{
 		"enabled": true,
 		"ingredientPattern": "SNS,LLL,LLL",
-		"recipeGroup": 1,
+		"recipeGroup": 2,
 		"ingredients": {
 			"N": {"type": "item", "code": "part-furniture-{metal}", "quantity":  2},
 			"L": { "type": "item", "code": "game:leather-sturdy-plain", "quantity":  2 },
@@ -53,7 +53,7 @@
 	{
 		"enabled": true,
 		"ingredientPattern": "SNS,LLL",
-		"recipeGroup": 1,
+		"recipeGroup": 2,
 		"ingredients": {
 			"N": {"type": "item", "code": "part-furniture-{metal}", "quantity":  1},
 			"L": { "type": "item", "code": "game:leather-sturdy-plain", "quantity":  1 },

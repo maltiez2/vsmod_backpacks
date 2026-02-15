@@ -7,13 +7,14 @@
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
   "behaviors": [
-    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 6, "canHoldWildcards": ["*"] }] } },
+    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 3, "canHoldWildcards": ["*"] }] } },
     {
       "name": "Backpacks:ShapeTexturesFromAttributes",
       "properties": {
         "textures": {
-          "rope-*::material-*": { "backframe-strap": { "base": "game:block/cloth/{rope}" }, "backframe-material": { "base": "game:item/bag/hunterbackpack" } },
-          "*": { "backframe-strap": { "base": "game:block/cloth/reedrope" }, "backframe-material": { "base": "game:item/bag/hunterbackpack" } }
+          "rope-flaxtwine": { "backframe-strap": { "base": "game:block/cloth/linen/plain" } },
+          "rope-reedrope": { "backframe-strap": { "base": "game:item/resource/rope" } },
+          "*": { "backframe-strap": { "base": "game:block/cloth/reedrope" } }
         }
       }
     },
@@ -24,12 +25,17 @@
         "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
         "shape": { "*": { "base": "backpacks:gui/stickframe-smallpeltsack" } },
         "textures": {
-          "rope-*::material-*": { "backframe-strap": { "base": "game:block/cloth/{rope}" }, "backframe-material": { "base": "game:item/bag/hunterbackpack" } },
-          "*": { "backframe-strap": { "base": "game:block/cloth/reedrope" }, "backframe-material": { "base": "game:item/bag/hunterbackpack" } }
+          "rope-flaxtwine": { "backframe-strap": { "base": "game:block/cloth/linen/plain" } },
+          "rope-reedrope": { "backframe-strap": { "base": "game:item/resource/rope" } },
+          "*": { "backframe-strap": { "base": "game:block/cloth/reedrope" } }
         }
       }
     },
-    { "name": "CombatOverhaul:GoesIntoSlotsInfo" }
+    { "name": "CombatOverhaul:GoesIntoSlotsInfo" },
+    {
+      "name": "Backpacks:GenerateCreativeStacks",
+      "properties": { "enabled": true, "attributes": { "rope": ["reedrope", "flaxtwine"] }, "creativeTabs": ["backpacks-colors"], "format": "{{ \"types\": {{ {0} }} }}" }
+    }
   ],
   "attributes": { "wearableAttachment": true, "clothescategories": ["addBackpack2"], "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
   "creativeinventory": { "general": ["*"], "backpacks": ["*"] },

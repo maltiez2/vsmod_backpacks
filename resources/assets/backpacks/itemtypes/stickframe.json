@@ -12,6 +12,8 @@
       "name": "Backpacks:ShapeTexturesFromAttributes",
       "properties": {
         "textures": {
+          "rope-flaxtwine::wood-*": { "backframe-strap": { "base": "game:block/cloth/linen/plain" }, "backframe-material": { "base": "game:block/wood/debarked/{wood}" } },
+          "rope-reedrope::wood-*": { "backframe-strap": { "base": "game:item/resource/rope" }, "backframe-material": { "base": "game:block/wood/debarked/{wood}" } },
           "rope-*::wood-*": { "backframe-strap": { "base": "game:block/cloth/{rope}" }, "backframe-material": { "base": "game:block/wood/debarked/{wood}" } },
           "*": { "backframe-strap": { "base": "game:block/cloth/reedrope" }, "backframe-material": { "base": "game:block/wood/debarked/oak" } }
         }
@@ -31,15 +33,18 @@
         "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
         "shape": { "*": { "base": "backpacks:gui/stickframe" } },
         "textures": {
-          "metal-*::leather-*::straps-leather-*": {
-            "backpack-material-1": { "base": "game:block/leather/{leather}" },
-            "backpack-material-2": { "base": "game:block/leather/{straps-leather}" },
-            "backpack-metal": { "base": "game:block/metal/plate/{metal}" }
-          }
+          "rope-flaxtwine::wood-*": { "backframe-strap": { "base": "game:block/cloth/linen/plain" }, "backframe-material": { "base": "game:block/wood/debarked/{wood}" } },
+          "rope-reedrope::wood-*": { "backframe-strap": { "base": "game:item/resource/rope" }, "backframe-material": { "base": "game:block/wood/debarked/{wood}" } },
+          "rope-*::wood-*": { "backframe-strap": { "base": "game:block/cloth/{rope}" }, "backframe-material": { "base": "game:block/wood/debarked/{wood}" } },
+          "*": { "backframe-strap": { "base": "game:block/cloth/reedrope" }, "backframe-material": { "base": "game:block/wood/debarked/oak" } }
         }
       }
     },
-    { "name": "CombatOverhaul:GoesIntoSlotsInfo" }
+    { "name": "CombatOverhaul:GoesIntoSlotsInfo" },
+    {
+      "name": "Backpacks:GenerateCreativeStacks",
+      "properties": { "enabled": true, "attributes": { "rope": ["reedrope", "flaxtwine"], "wood": ["oak"] }, "creativeTabs": ["backpacks-colors"], "format": "{{ \"types\": {{ {0} }} }}" }
+    }
   ],
   "attributes": { "wearableAttachment": true, "clothescategory": "backgear", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
   "creativeinventory": { "general": ["*"], "backpacks": ["*"] },

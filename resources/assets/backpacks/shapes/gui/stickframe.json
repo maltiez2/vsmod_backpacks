@@ -9,7 +9,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"backframe-strap": "game:block/cloth/reedrope",
+		"backframe-strap": "game:item/resource/rope",
 		"backframe-material": "game:block/wood/debarked/oak"
 	},
 	"elements": [
