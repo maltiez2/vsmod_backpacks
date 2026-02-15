@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ModName>Backpacks</ModName>
     <ModType>code</ModType>
-    <ModVersion>0.0.2</ModVersion>
+    <ModVersion>0.0.3</ModVersion>
     <ModId>backpacks</ModId>
     <Description></Description>
     <Side>universal</Side>

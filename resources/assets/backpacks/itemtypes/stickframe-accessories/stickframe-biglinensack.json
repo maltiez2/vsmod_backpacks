@@ -7,7 +7,7 @@
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
   "behaviors": [
-    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 12 }] } },
+    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 12, "canHoldWildcards": ["*"] }] } },
     {
       "name": "Backpacks:ShapeTexturesFromAttributes",
       "properties": {
