@@ -1,65 +1,55 @@
 ﻿using AttributeRenderingLibrary;
-using CombatOverhaul.Armor;
+using PlayerInventoryLib;
+using PlayerInventoryLib.Backpacks;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.Server;
-using Vintagestory.Common;
 using Vintagestory.GameContent;
 
 namespace Backpacks;
 
-public class QuiverBehavior : GearEquipableBag
+/*public class ExtendedBackpackConfig
 {
-    public QuiverBehavior(CollectibleObject collObj) : base(collObj)
+    public string RightHandVariant { get; set; } = "right_slot";
+    public string LeftHandVariant { get; set; } = "left_slot";
+    public string RightHandStateVariant { get; set; } = "right_slot_state";
+    public string LeftHandStateVariant { get; set; } = "left_slot_state";
+    public string EmptyStateCode { get; set; } = "empty";
+    public string FullStateCode { get; set; } = "full";
+    public string RightWeaponMetalVariant { get; set; } = "right_metal";
+    public string RightWeaponLeatherVariant { get; set; } = "right_leather";
+    public string RightWeaponWoodVariant { get; set; } = "right_wood";
+    public string LeftWeaponMetalVariant { get; set; } = "left_metal";
+    public string LeftWeaponLeatherVariant { get; set; } = "left_leather";
+    public string LeftWeaponWoodVariant { get; set; } = "left_wood";
+
+
+}
+
+public class ExtendedBackpackBehavior : BackpackBehavior
+{
+    public ExtendedBackpackBehavior(CollectibleObject collObj) : base(collObj)
     {
     }
+
+    public ExtendedBackpackConfig ExtendedConfig { get; set; } = new();
+
 
     public override void Initialize(JsonObject properties)
     {
         base.Initialize(properties);
 
-        Stats = properties.AsObject<SheathStats>();
+        ExtendedConfig = properties.AsObject<ExtendedBackpackConfig>() ?? new();
     }
 
-    public override List<ItemSlotBagContent?> GetOrCreateSlots(ItemStack bagstack, InventoryBase parentinv, int bagIndex, IWorldAccessor world)
+    public override void OnBackpackSlotModified(IBackpackSlot backpackSlot)
     {
-        if (parentinv is InventoryBasePlayer playerInventory && playerInventory.Player?.Entity != null && world.Api is ICoreServerAPI)
-        {
-            EntityPlayer player = playerInventory.Player.Entity;
+        base.OnBackpackSlotModified(backpackSlot);
 
-            if (!ProcessedPlayers.Contains(player.EntityId))
-            {
-                playerInventory.SlotModified += slotIndex => OnSlotModified(playerInventory, player, slotIndex, bagIndex);
-                ProcessedPlayers.Add(player.EntityId);
-            }
-        }
-
-        return base.GetOrCreateSlots(bagstack, parentinv, bagIndex, world);
-    }
-
-    protected readonly List<long> ProcessedPlayers = [];
-    protected SheathStats Stats = new();
-
-    protected static InventoryBase? GetGearInventory(Entity entity)
-    {
-        return entity.GetBehavior<EntityBehaviorPlayerInventory>()?.Inventory;
-    }
-    protected InventoryPlayerBackPacks? GetBackpackInventory(EntityPlayer entity)
-    {
-        return entity.Player.InventoryManager.GetOwnInventory(GlobalConstants.backpackInvClassName) as InventoryPlayerBackPacks;
-    }
-
-    protected virtual void OnSlotModified(InventoryBasePlayer backpackInventory, EntityPlayer player, int slotIndex, int bagIndex)
-    {
-        InventoryBase? gearInventory = GetGearInventory(player);
-        if (gearInventory == null) return;
-
-        ItemSlot? sheathSlot = gearInventory
-            .Where(slot => slot?.Itemstack?.Collectible?.Id == collObj.Id)
-            .FirstOrDefault((ItemSlot?)null);
-        if (sheathSlot?.Itemstack == null) return;
+        BackpackInventory backpackInventory = (backpackSlot as ItemSlot)?.Inventory as BackpackInventory ?? throw new Exception();
+        CharacterInventory characterInventory = backpackInventory.Player?.InventoryManager.GetOwnInventory(GlobalConstants.characterInvClassName) as CharacterInventory ?? throw new Exception();
 
         IEnumerable<string> variantCodes = backpackInventory
             .OfType<ItemSlotBagContentWithWildcardMatch>()
@@ -181,4 +171,4 @@ public class QuiverBehavior : GearEquipableBag
             }
         }
     }
-}
+}*/

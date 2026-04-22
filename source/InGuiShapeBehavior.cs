@@ -14,7 +14,7 @@ public class ShapeReplacement : CollectibleBehavior, IContainedMeshSource, IShap
     public Dictionary<string, List<object>> DescriptionByType { get; protected set; } = new();
     public Dictionary<string, CompositeShape> ShapeByType { get; protected set; } = new();
     public Dictionary<string, Dictionary<string, CompositeTexture>> TexturesByType { get; protected set; } = new();
-    public Dictionary<string, OrderedDictionary<string, CompositeShape>> AttachedShapeBySlotCodeByType { get; protected set; } = new();
+    public Dictionary<string, System.Collections.Generic.OrderedDictionary<string, CompositeShape>> AttachedShapeBySlotCodeByType { get; protected set; } = new();
     public Dictionary<string, string> CategoryCodeByType { get; protected set; } = new();
     public Dictionary<string, string[]> DisableElementsByType { get; protected set; } = new();
     public Dictionary<string, string[]> KeepElementsByType { get; protected set; } = new();
@@ -49,7 +49,7 @@ public class ShapeReplacement : CollectibleBehavior, IContainedMeshSource, IShap
             ShapeByType = properties["shape"].AsObject<Dictionary<string, CompositeShape>>();
             TexturesByType = properties["textures"].AsObject<Dictionary<string, Dictionary<string, CompositeTexture>>>();
 
-            AttachedShapeBySlotCodeByType = properties["attachedShapeBySlotCode"].AsObject<Dictionary<string, OrderedDictionary<string, CompositeShape>>>();
+            AttachedShapeBySlotCodeByType = properties["attachedShapeBySlotCode"].AsObject<Dictionary<string, System.Collections.Generic.OrderedDictionary<string, CompositeShape>>>();
             CategoryCodeByType = properties["categoryCode"].AsObject<Dictionary<string, string>>();
             DisableElementsByType = properties["disableElements"].AsObject<Dictionary<string, string[]>>();
             KeepElementsByType = properties["keepElements"].AsObject<Dictionary<string, string[]>>();
@@ -133,4 +133,8 @@ public class ShapeReplacement : CollectibleBehavior, IContainedMeshSource, IShap
     {
         return $"{itemstack.Collectible.Code}-{Variants.FromStack(itemstack)}-gui";
     }
+
+    public MeshData GenMesh(ItemSlot slot, ITextureAtlasAPI targetAtlas, BlockPos atBlockPos) => GenMesh(slot.Itemstack, targetAtlas, atBlockPos);
+    
+    public string GetMeshCacheKey(ItemSlot slot) => GetMeshCacheKey(slot.Itemstack);
 }

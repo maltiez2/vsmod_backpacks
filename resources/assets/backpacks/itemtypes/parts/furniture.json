@@ -1,5 +1,6 @@
 ﻿{
   "code": "part",
+  "tags": ["part"],
   "class": "Item",
   "maxstacksize": 4,
   "variantgroups": [{ "code": "type", "states": ["furniture"] }, { "code": "material", "states": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"] }],

@@ -1,11 +1,9 @@
-﻿using AttributeRenderingLibrary;
-using CombatOverhaul.Armor;
-using Vintagestory.API.Common;
+﻿using Vintagestory.API.Common;
 using Vintagestory.API.Datastructures;
 
 namespace Backpacks;
 
-public class VariantFromSlotConfig
+/*public class VariantFromSlotConfig
 {
     public Dictionary<string, string> SlotsToVariants { get; set; } = [];
     public string TargetVariant { get; set; } = "";
@@ -41,4 +39,4 @@ public class VariantFromSlotBehavior : CollectibleBehavior, IGearSlotModifiedLis
     }
 
     protected VariantFromSlotConfig Config = new();
-}
+}*/

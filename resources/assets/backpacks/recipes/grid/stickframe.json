@@ -1,6 +1,6 @@
 [
   {
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "SRS,SSS,SRS",
 		"recipeGroup": 1,
 		"ingredients": {

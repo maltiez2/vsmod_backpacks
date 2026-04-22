@@ -1,6 +1,6 @@
 [
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "CRC,C_C,CCC",
 		"recipeGroup": 2,
 		"ingredients": {
@@ -13,7 +13,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-biglinensack-stickframe-general", "attributes": {"types": {"rope": "flaxtwine"} } }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "CRC,_C_",
 		"recipeGroup": 2,
 		"ingredients": {

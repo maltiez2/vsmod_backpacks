@@ -1,6 +1,6 @@
 [
   {
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "SNS,LLL,LLL",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -14,7 +14,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-back-plain-backpack" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "SNS,LLL",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -28,7 +28,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-pocket-backpack-general" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "SNS,LLL,LLL",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -42,7 +42,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-back-plain-sturdybackpack" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "SNS,LLL",
 		"recipeGroup": 1,
 		"ingredients": {

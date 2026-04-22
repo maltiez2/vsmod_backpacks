@@ -1,5 +1,4 @@
-﻿using AttributeRenderingLibrary;
-using System.Text;
+﻿using System.Text;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
@@ -10,7 +9,7 @@ using Vintagestory.GameContent;
 
 namespace Backpacks;
 
-public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSource, IShapeTexturesFromAttributes, IAttachableToEntity
+/*public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSource, IShapeTexturesFromAttributes, IAttachableToEntity
 {
     public Dictionary<string, List<object>> NameByType { get; protected set; } = new();
     public Dictionary<string, List<object>> DescriptionByType { get; protected set; } = new();
@@ -263,4 +262,4 @@ public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSo
     }
 
     int IAttachableToEntity.RequiresBehindSlots { get; set; }
-}
+}*/

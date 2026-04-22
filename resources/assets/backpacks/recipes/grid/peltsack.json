@@ -1,6 +1,6 @@
 [
   {
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "CRC,CRC,CCC",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -13,7 +13,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "CRC,_C_",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -26,7 +26,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "CRC,CRC,CCC",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -39,7 +39,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "CRC,_C_",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -52,7 +52,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "CRC,CRC,CCC",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -65,7 +65,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "CRC,_C_",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -78,7 +78,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-smallpeltsack-stickframe-general" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "CRC,CRC,CCC",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -91,7 +91,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-bigpeltsack-stickframe-general" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "CRC,_C_",
 		"recipeGroup": 1,
 		"ingredients": {
