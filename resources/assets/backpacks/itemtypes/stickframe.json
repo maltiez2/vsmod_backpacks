@@ -1,16 +1,21 @@
 ﻿{
-  "enabled": false,
   "code": "backbag",
   "class": "Item",
-  "tags": ["backpack"],
+  "tags": ["backpack", "slot-backpacks-backpack"],
   "variantgroups": [{ "code": "category", "states": ["back"] }, { "code": "subtype", "states": ["plain"] }, { "code": "type", "states": ["stickframe"] }],
   "shape": { "base": "attachable/{type}" },
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
   "behaviors": [
-    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 0 }] } },
     {
-      "name": "Backpacks:ShapeTexturesFromAttributes",
+      "name": "PlayerInventoryLib:EnableSlotsBehavior",
+      "properties": {
+        "slotsToEnable": ["backpacks:backpack-accessory-0", "backpacks:backpack-accessory-1"],
+        "configOverride": { "*": { "OverrideTags": true, "Tags": ["stickframe-accessory"], "Icon": "backpacks:backpack" } }
+      }
+    },
+    {
+      "name": "AttributeRenderingLibrary.Wearable",
       "properties": {
         "textures": {
           "rope-flaxtwine::wood-*": { "backframe-strap": { "base": "game:block/cloth/linen/plain" }, "backframe-material": { "base": "game:block/wood/debarked/{wood}" } },
@@ -21,16 +26,8 @@
       }
     },
     {
-      "name": "CombatOverhaul:AdditionalSlots",
-      "properties": {
-        "enabledSlots": ["addBackpack1", "addBackpack2"],
-        "configs": { "addBackpack1": { "canHoldItemTags": ["stickframe-accessory"] }, "addBackpack2": { "canHoldItemTags": ["stickframe-accessory"] } }
-      }
-    },
-    {
       "name": "Backpacks:ShapeReplacement",
       "properties": {
-        "addOverlayPrefix": false,
         "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
         "shape": { "*": { "base": "backpacks:gui/stickframe" } },
         "textures": {
@@ -42,11 +39,11 @@
       }
     },
     {
-      "name": "Backpacks:GenerateCreativeStacks",
-      "properties": { "enabled": true, "attributes": { "rope": ["reedrope", "flaxtwine"], "wood": ["oak"] }, "creativeTabs": ["backpacks-colors"], "format": "{{ \"types\": {{ {0} }} }}" }
+      "name": "AttributeRenderingLibrary.GenerateCreativeStacks",
+      "properties": { "variantgroups": [{ "code": "rope", "states": ["reedrope", "flaxtwine"] }, { "code": "wood", "states": ["oak"] }], "creativeinventory": { "backpacks-colors": ["*"] } }
     }
   ],
-  "attributes": { "wearableAttachment": true, "clothescategory": "backgear", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
+  "attributes": { "wearableAttachment": true, "handbook": { "groupBy": ["*"] } },
   "creativeinventory": { "general": ["*"], "backpacks": ["*"] },
   "creativeinventoryStacks": [{ "tabs": ["general", "backpacks-colors"], "stacks": [{ "type": "item", "code": "backbag-{category}-{subtype}-{type}" }] }],
   "renderAlphaTest": "0.25",

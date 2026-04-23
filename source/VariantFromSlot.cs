@@ -1,15 +1,17 @@
-﻿using Vintagestory.API.Common;
+﻿using AttributeRenderingLibrary;
+using PlayerInventoryLib;
+using Vintagestory.API.Common;
 using Vintagestory.API.Datastructures;
 
 namespace Backpacks;
 
-/*public class VariantFromSlotConfig
+public class VariantFromSlotConfig
 {
     public Dictionary<string, string> SlotsToVariants { get; set; } = [];
     public string TargetVariant { get; set; } = "";
 }
 
-public class VariantFromSlotBehavior : CollectibleBehavior, IGearSlotModifiedListener
+public class VariantFromSlotBehavior : CollectibleBehavior, IOnSlotModifiedListener
 {
     public VariantFromSlotBehavior(CollectibleObject collObj) : base(collObj)
     {
@@ -19,24 +21,23 @@ public class VariantFromSlotBehavior : CollectibleBehavior, IGearSlotModifiedLis
     {
         base.Initialize(properties);
 
-        Config = properties.AsObject<VariantFromSlotConfig>();
+        Config = properties.AsObject<VariantFromSlotConfig>() ?? new();
     }
 
-    public virtual void OnSlotModified(ItemSlot slot, ArmorInventory inventory, EntityPlayer player)
+    public virtual void OnSlotModified(ItemSlot slot)
     {
-        GearSlot? sheathSlot = slot as GearSlot;
-        if (sheathSlot?.Itemstack == null) return;
+        if (slot is not IPlayerInventorySlot playerSlot || slot.Itemstack == null) return;
 
-        string slotType = sheathSlot.SlotType;
-        string variantValue = Config.SlotsToVariants[slotType];
-        Variants variants = Variants.FromStack(sheathSlot.Itemstack);
-
+        string slotId = playerSlot.SlotId;
+        if (!Config.SlotsToVariants.TryGetValue(slotId, out string? variantValue)) return;
+        
+        Variants variants = Variants.FromStack(slot.Itemstack);
         if (variants.Get(Config.TargetVariant) == variantValue) return;
 
         variants.Set(Config.TargetVariant, variantValue);
-        variants.ToStack(sheathSlot.Itemstack);
-        sheathSlot.MarkDirty();
+        variants.ToStack(slot.Itemstack);
+        slot.MarkDirty();
     }
 
     protected VariantFromSlotConfig Config = new();
-}*/
+}

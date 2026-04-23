@@ -1,6 +1,6 @@
 [
   {
-		"enabled": false,
+		"enabled": true,
 		"ingredientPattern": "SNS,LLL,LLL",
 		"recipeGroup": 2,
 		"ingredients": {
@@ -17,7 +17,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-back-plain-backpack", "attributes": {"types": {"leather": "{leather}", "straps-leather": "{strapleather}", "metal": "{metal}"}} }
 	},
 	{
-		"enabled": false,
+		"enabled": true,
 		"ingredientPattern": "SNS,LLL",
 		"recipeGroup": 2,
 		"ingredients": {
@@ -34,7 +34,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-pocket-backpack-general", "attributes": {"types": {"leather": "{leather}", "straps-leather": "{strapleather}", "metal": "{metal}"}} }
 	},
 	{
-		"enabled": false,
+		"enabled": true,
 		"ingredientPattern": "SNS,LLL,LLL",
 		"recipeGroup": 2,
 		"ingredients": {
@@ -51,7 +51,7 @@
 		"output": { "type": "item", "code": "backpacks:backbag-back-plain-sturdybackpack", "attributes": {"types": {"leather": "chromium", "straps-leather": "{strapleather}", "metal": "{metal}"}} }
 	},
 	{
-		"enabled": false,
+		"enabled": true,
 		"ingredientPattern": "SNS,LLL",
 		"recipeGroup": 2,
 		"ingredients": {

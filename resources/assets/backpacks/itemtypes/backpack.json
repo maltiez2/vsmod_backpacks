@@ -10,7 +10,10 @@
     { "name": "PlayerInventoryLib:BackpackBehavior", "properties": { "slotGroups": { "backpack": { "number": 18 } } } },
     {
       "name": "PlayerInventoryLib:EnableSlotsBehavior",
-      "properties": { "slotsToEnable": ["backpacks:backpack-accessory-0", "backpacks:backpack-accessory-1", "backpacks:backpack-accessory-2", "backpacks:backpack-accessory-3"] }
+      "properties": {
+        "slotsToEnable": ["backpacks:backpack-accessory-0", "backpacks:backpack-accessory-1", "backpacks:backpack-accessory-2"],
+        "configOverride": { "*": { "OverrideTags": true, "Tags": ["backpack-accessory"], "Icon": "backpacks:backpack" } }
+      }
     },
     {
       "name": "AttributeRenderingLibrary.Wearable",
@@ -27,7 +30,6 @@
     {
       "name": "Backpacks:ShapeReplacement",
       "properties": {
-        "addOverlayPrefix": false,
         "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
         "shape": { "*": { "base": "backpacks:gui/backpack" } },
         "textures": {
@@ -51,7 +53,7 @@
       }
     }
   ],
-  "attributes": { "wearableAttachment": true, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
+  "attributes": { "wearableAttachment": true, "handbook": { "groupBy": ["*"] } },
   "creativeinventory": { "general": ["*"], "backpacks": ["*"] },
   "creativeinventoryStacks": [{ "tabs": ["general", "backpacks-colors"], "stacks": [{ "type": "item", "code": "backbag-{category}-{subtype}-{type}" }] }],
   "renderAlphaTest": "0.25",

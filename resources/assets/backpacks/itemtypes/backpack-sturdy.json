@@ -1,16 +1,22 @@
 ﻿{
-  "enabled": false,
   "code": "backbag",
   "class": "Item",
-  "tags": ["backpack"],
+  "tags": ["backpack", "slot-backpacks-backpack"],
   "variantgroups": [{ "code": "category", "states": ["back"] }, { "code": "subtype", "states": ["plain"] }, { "code": "type", "states": ["sturdybackpack"] }],
   "shape": { "base": "attachable/backpack" },
   "textures": { "seraph": { "base": "game:block/transparent" }, "backpack-material-1": { "base": "game:block/leather/chromium" } },
   "storageFlags": 128,
   "behaviors": [
-    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 23, "canHoldWildcards": ["*"] }] } },
+    { "name": "PlayerInventoryLib:BackpackBehavior", "properties": { "slotGroups": { "backpack": { "number": 23 } } } },
     {
-      "name": "Backpacks:ShapeTexturesFromAttributes",
+      "name": "PlayerInventoryLib:EnableSlotsBehavior",
+      "properties": {
+        "slotsToEnable": ["backpacks:backpack-accessory-0", "backpacks:backpack-accessory-1", "backpacks:backpack-accessory-2"],
+        "configOverride": { "*": { "OverrideTags": true, "Tags": ["backpack-accessory"], "Icon": "backpacks:backpack" } }
+      }
+    },
+    {
+      "name": "AttributeRenderingLibrary.Wearable",
       "properties": {
         "textures": {
           "metal-*::leather-*::straps-leather-*": {
@@ -22,21 +28,8 @@
       }
     },
     {
-      "name": "CombatOverhaul:AdditionalSlots",
-      "properties": {
-        "enabledSlots": ["addBackpack1", "addBackpack2", "addBackpack3", "addBackpack4"],
-        "configs": {
-          "addBackpack1": { "canHoldItemTags": ["backpack-accessory"] },
-          "addBackpack2": { "canHoldItemTags": ["backpack-accessory"] },
-          "addBackpack3": { "canHoldItemTags": ["backpack-accessory"] },
-          "addBackpack4": { "canHoldItemTags": ["backpack-accessory"] }
-        }
-      }
-    },
-    {
       "name": "Backpacks:ShapeReplacement",
       "properties": {
-        "addOverlayPrefix": false,
         "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
         "shape": { "*": { "base": "backpacks:gui/backpack" } },
         "textures": {
@@ -48,22 +41,19 @@
         }
       }
     },
-    { "name": "CombatOverhaul:GoesIntoSlotsInfo" },
     {
-      "name": "Backpacks:GenerateCreativeStacks",
+      "name": "AttributeRenderingLibrary.GenerateCreativeStacks",
       "properties": {
-        "enabled": true,
-        "attributes": {
-          "metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"],
-          "leather": ["chromium"],
-          "straps-leather": ["plain", "orange", "black", "red", "blue", "purple", "pink", "white", "yellow", "gray", "green"]
-        },
-        "creativeTabs": ["backpacks-colors"],
-        "format": "{{ \"types\": {{ {0} }} }}"
+        "variantgroups": [
+          { "code": "metal", "states": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"] },
+          { "code": "leather", "states": ["chromium"] },
+          { "code": "straps-leather", "states": ["plain", "orange", "black", "red", "blue", "purple", "pink", "white", "yellow", "gray", "green"] }
+        ],
+        "creativeinventory": { "backpacks-colors": ["*"] }
       }
     }
   ],
-  "attributes": { "wearableAttachment": true, "clothescategory": "backgear", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
+  "attributes": { "wearableAttachment": true, "handbook": { "groupBy": ["*"] } },
   "creativeinventory": { "general": ["*"], "backpacks": ["*"] },
   "creativeinventoryStacks": [{ "tabs": ["general", "backpacks-colors"], "stacks": [{ "type": "item", "code": "backbag-{category}-{subtype}-{type}" }] }],
   "renderAlphaTest": "0.25",

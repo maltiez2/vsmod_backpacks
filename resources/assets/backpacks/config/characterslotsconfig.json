@@ -7,7 +7,7 @@
     }
   },
   "Slots": {
-    "backpack" : {"Priority": 0.25, "Disabled": false, "HiddenWhenDisabled": false, "Group": "right" },
+    "backpack" : {"Priority": 0.25, "Disabled": false, "HiddenWhenDisabled": false, "Group": "right", "Icon": "backpacks:backpack" },
     "backpack-accessory-0" : {"Priority": 0.01, "Disabled": true, "HiddenWhenDisabled": true, "Group": "backpacks:backpack-accessories", "DisabledColor": "#888888" },
     "backpack-accessory-1" : {"Priority": 0.02, "Disabled": true, "HiddenWhenDisabled": true, "Group": "backpacks:backpack-accessories", "DisabledColor": "#888888" },
     "backpack-accessory-2" : {"Priority": 0.03, "Disabled": true, "HiddenWhenDisabled": true, "Group": "backpacks:backpack-accessories", "DisabledColor": "#888888" },

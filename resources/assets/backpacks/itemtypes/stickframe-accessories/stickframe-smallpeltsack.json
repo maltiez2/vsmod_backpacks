@@ -1,16 +1,15 @@
 ﻿{
-  "enabled": false,
   "code": "backbag",
   "class": "Item",
-  "tags": ["stickframe-accessory"],
+  "tags": ["stickframe-accessory", "slot-backpacks-backpack-accessory-1"],
   "variantgroups": [{ "code": "category", "states": ["smallpeltsack"] }, { "code": "subtype", "states": ["stickframe"] }, { "code": "type", "states": ["general"] }],
   "shape": { "base": "attachable/stickframe-accessories/smallpeltsack" },
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
   "behaviors": [
-    { "name": "Backpacks:Quiver", "properties": { "slots": [{ "slotsNumber": 3, "canHoldWildcards": ["*"] }] } },
+    { "name": "PlayerInventoryLib:BackpackBehavior", "properties": { "slotGroups": { "backpack": { "number": 3 } } } },
     {
-      "name": "Backpacks:ShapeTexturesFromAttributes",
+      "name": "AttributeRenderingLibrary.Wearable",
       "properties": {
         "textures": {
           "rope-flaxtwine": { "backframe-strap": { "base": "game:block/cloth/linen/plain" } },
@@ -22,7 +21,6 @@
     {
       "name": "Backpacks:ShapeReplacement",
       "properties": {
-        "addOverlayPrefix": false,
         "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
         "shape": { "*": { "base": "backpacks:gui/stickframe-smallpeltsack" } },
         "textures": {
@@ -32,13 +30,12 @@
         }
       }
     },
-    { "name": "CombatOverhaul:GoesIntoSlotsInfo" },
     {
-      "name": "Backpacks:GenerateCreativeStacks",
-      "properties": { "enabled": true, "attributes": { "rope": ["reedrope", "flaxtwine"] }, "creativeTabs": ["backpacks-colors"], "format": "{{ \"types\": {{ {0} }} }}" }
+      "name": "AttributeRenderingLibrary.GenerateCreativeStacks",
+      "properties": { "variantgroups": [{ "code": "rope", "states": ["reedrope", "flaxtwine"] }], "creativeinventory": { "backpacks-colors": ["*"] } }
     }
   ],
-  "attributes": { "wearableAttachment": true, "clothescategories": ["addBackpack2"], "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["backbag-{category}-{subtype}-{type}"] } },
+  "attributes": { "wearableAttachment": true, "handbook": { "groupBy": ["*"] } },
   "creativeinventory": { "general": ["*"], "backpacks": ["*"] },
   "creativeinventoryStacks": [{ "tabs": ["general", "backpacks-colors"], "stacks": [{ "type": "item", "code": "backbag-{category}-{subtype}-{type}" }] }],
   "renderAlphaTest": "0.25",

@@ -18,7 +18,7 @@ public class ShapeReplacement : CollectibleBehavior, IContainedMeshSource, IShap
     public Dictionary<string, string> CategoryCodeByType { get; protected set; } = new();
     public Dictionary<string, string[]> DisableElementsByType { get; protected set; } = new();
     public Dictionary<string, string[]> KeepElementsByType { get; protected set; } = new();
-    public bool AddOverlayPrefix { get; protected set; } = true;
+    public bool AddOverlayPrefix { get; protected set; } = false;
     public EnumItemRenderTarget[] Targets { get; protected set; } = [];
 
     Dictionary<string, CompositeShape> IShapeTexturesFromAttributes.shapeByType => ShapeByType;
@@ -53,7 +53,7 @@ public class ShapeReplacement : CollectibleBehavior, IContainedMeshSource, IShap
             CategoryCodeByType = properties["categoryCode"].AsObject<Dictionary<string, string>>();
             DisableElementsByType = properties["disableElements"].AsObject<Dictionary<string, string[]>>();
             KeepElementsByType = properties["keepElements"].AsObject<Dictionary<string, string[]>>();
-            AddOverlayPrefix = properties["addOverlayPrefix"].AsBool(true);
+            AddOverlayPrefix = properties["addOverlayPrefix"].AsBool(false);
 
             Targets = properties["renderTargets"].AsObject<string[]>([]).Select(Enum.Parse<EnumItemRenderTarget>).ToArray();
         }
