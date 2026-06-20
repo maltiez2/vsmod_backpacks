@@ -1,0 +1,17 @@
+{
+  "game:tabname-backpacks": "Mochilas",
+  "game:tabname-backpacks-colors": "Mochilas (Coloridas)",
+
+  "item-backbag-back-plain-backpack": "Mochila",
+  "item-backbag-back-plain-sturdybackpack": "Mochila resistente",
+  "item-backbag-back-plain-stickframe": "Estrutura de galhos",
+  "item-backbag-pocket-backpack-general": "Bolso de mochila",
+  "item-backbag-sturdypocket-backpack-general": "Bolso de mochila resistente",
+  "item-backbag-bigbasket-stickframe-general": "Cesto grande de junco para as costas",
+  "item-backbag-smallbasket-stickframe-general": "Cesto pequeno de junco para as costas",
+  "item-backbag-biglinensack-stickframe-general": "Saco grande de linho para as costas",
+  "item-backbag-smalllinensack-stickframe-general": "Saco pequeno de linho para as costas",
+  "item-backbag-bigpeltsack-stickframe-general": "Saco grande de pele para as costas",
+  "item-backbag-smallpeltsack-stickframe-general": "Saco pequeno de pele para as costas",
+  "item-part-furniture-*": "Móvel de mochila"
+}
